@@ -1,7 +1,7 @@
 require("dotenv").config();
 const express = require("express");
 const compression = require('compression');
-const morgan = require("morgan");
+// const morgan = require("morgan");
 const cors = require("cors");
 const path = require("path");
 
@@ -11,8 +11,8 @@ const path = require("path");
 const app = express();
 const PORT = process.env.PORT || 7500;
 
-app.use(compression({ filter:shouldCompress} ));
-app.use(morgan("common"));
+app.use(compression());
+// app.use(morgan("common"));
 app.use(cors());
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
