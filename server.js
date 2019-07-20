@@ -18,6 +18,11 @@ app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
 app.use(express.static("client/build"));
 
+app.get("/", function(req, res) {
+    res.sendFile(path.join(__dirname, "./client/build/index.html"));
+
+})
+
 app.listen(PORT, () => console.log("Successful Connection:  Visit http://localhost/ in you browser port: "  + PORT));
 
 module.exports = app;
