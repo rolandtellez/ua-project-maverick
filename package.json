@@ -28,7 +28,7 @@
   },
   "homepage": "https://github.com/rolandtellez/ua-project-maverick#readme",
   "dependencies": {
-    "axios": "^0.19.0",
+    "axios": "^0.21.1",
     "compression": "^1.7.4",
     "concurrently": "^4.1.1",
     "cors": "^2.8.5",
